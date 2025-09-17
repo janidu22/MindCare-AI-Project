@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-MindCare.Web-45135fb3-d3eb-415f-9cfb-2d873b5e7ada</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.19" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.19" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.19" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.19" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.19" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MindCare.Application\MindCare.Application.csproj" />
+    <ProjectReference Include="..\MindCare.Domain\MindCare.Domain.csproj" />
+    <ProjectReference Include="..\MindCare.Infrastructure\MindCare.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Views\" />
+    <Folder Include="Areas\Counselor\Controllers\" />
+    <Folder Include="Areas\Counselor\Views\" />
+    <Folder Include="Areas\JuniorCounselor\Controllers\" />
+    <Folder Include="Areas\JuniorCounselor\Views\" />
+    <Folder Include="Areas\Patient\Controllers\" />
+    <Folder Include="Areas\Patient\Views\" />
+  </ItemGroup>
+
+</Project>
